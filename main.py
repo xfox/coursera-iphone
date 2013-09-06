@@ -59,6 +59,9 @@ def main():
             run = command.format(**tags)
             subprocess.call(run, shell=True)
 
+            command = 'osascript -e "tell application \"iTunes\" to add POSIX file'
+            subprocess.call(command, os.path.abspath(video_file))
+
 
 if __name__ == "__main__":
     main()
