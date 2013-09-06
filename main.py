@@ -59,11 +59,6 @@ def main():
             run = command.format(**tags)
             subprocess.call(run, shell=True)
 
-            break
-
-
-    pass
-
 
 if __name__ == "__main__":
     main()
